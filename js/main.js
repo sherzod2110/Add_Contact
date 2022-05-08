@@ -45,7 +45,8 @@ elForm.addEventListener("submit", function(evt) {
   }
   elInput1.style.borderColor = "#CED4DA";
   elInput2.style.borderColor = "#CED4DA";
-
+  
+  elList.innerHTML = "";
 
   // Append the array to the league
   for (let i = 0; i < elArray.length; i++) {
@@ -59,10 +60,11 @@ elForm.addEventListener("submit", function(evt) {
     elList.append(elNewLi);
 
   }
-  elInput1.value = "";
-  elInput2.value = "";
-  elInput3.value = "";
-  elInput4.value = "";
+  elInput1.value = null;
+  elInput2.value = null;
+  elInput3.value = null;
+  elInput4.value = null;
+  
 
 })
 

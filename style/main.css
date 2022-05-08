@@ -49,7 +49,7 @@
   width: 50px;
   height: 50px;
   content: "";
-  background-image: url("../570145.png");
+  background-image: url("../img/570145.png");
   filter: invert(34%) sepia(83%) saturate(2041%) hue-rotate(340deg) brightness(99%) contrast(86%);
   box-shadow: 1px 1px 12px red;
   border-radius: 12px;
