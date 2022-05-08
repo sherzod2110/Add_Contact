@@ -43,7 +43,8 @@ elForm.addEventListener("submit", function(evt) {
     elInput2.style.borderColor = "red";
     return
   }
-
+  elInput1.style.borderColor = "#CED4DA";
+  elInput2.style.borderColor = "#CED4DA";
 
 
   // Append the array to the league
