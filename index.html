@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/1033949.png">
   <title>Add Contact</title>
   <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="./style/main.css">
@@ -13,21 +14,34 @@
     <div class="container">
       <h1 class="text-center text-success my-3">ADD CONTACT</h1>
       <div class="row">
-
+        
+        <!-- =========== COL =========== -->
         <div class="col-6 mt-3">
-
+          <!-- ======== FORM =========== -->
           <form  class="form">
             <input class="form__input form-control mt-3" type="text" id="js-input-1" placeholder="Name" autocomplete="off">
             <input class="form__input form-control mt-3" type="text" id="js-input-2" placeholder="Surname" autocomplete="off">
             <input class="form__input form-control mt-3" type="text" id="js-input-3" placeholder="Relation" autocomplete="off">
-            <input class="form__input form-control mt-3" type="tel" id="js-input-4" placeholder="Number" autocomplete="off">
+            <input class="form__input form-control mt-3" type="tel" id="js-input-4" placeholder="+998906082280" autocomplete="off">
             <button class="btn btn-success w-100 mt-3 fw-bold" type="submit">Add Contact</button>
           </form>
 
         </div>
 
+
+        <!-- ================ COL ====================== -->
         <div class="col-6 mt-3">
-          <ul class="list"></ul>
+
+          <!-- ===========RESULT ============= -->
+          <ul class="list">
+            <div class="box-2">
+              <p><span class="fw-bold text-primary">Name: </span><span class="fw-bold text-success">Sherzod</span></p>
+              <p><span class="fw-bold text-primary">Surname: </span><span class="fw-bold text-success">Haydarov</span></p>
+              <p><span class="fw-bold text-primary">Relation: </span><span class="fw-bold text-success">Qwerty</span></p>
+              <p><span class="fw-bold text-primary">Number: </span><a href="Tel: 998906082280">+998906082280</a></p>
+            </div>
+          </ul>
+          
         </div>
 
       </div>

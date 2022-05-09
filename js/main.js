@@ -12,16 +12,6 @@ let elList = document.querySelector(".list");
 // Contacts array 
 let elArray = [];
 
-// Push the abeyk from form to array 
-let createContactObject = function(name, surname, relation, phone){
-
- elArray.push({
-   name,
-   surname,
-   relation,
-   phone,
- })
-}
 
 // Hearing the form 
 elForm.addEventListener("submit", function(evt) {
@@ -75,3 +65,15 @@ elList.addEventListener("click", function(evt){
     elList.removeChild(evt.target);
   }
 })
+
+
+// Push the abeyk from form to array 
+let createContactObject = function(name, surname, relation, phone){
+
+  elArray.push({
+    name,
+    surname,
+    relation,
+    phone,
+  })
+ }

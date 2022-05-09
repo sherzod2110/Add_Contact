@@ -65,3 +65,30 @@
   color: rgb(58, 154, 33);
 }
 
+.box-2 {
+  width: 500px;
+  padding: 10px;
+  border: 2px solid rgb(69, 217, 58);
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: rgb(37, 62, 206);
+  border-radius: 5px;
+  padding-left: 40px;
+  position: relative;
+}
+
+.box-2::after {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  content: "";
+  background-image: url("../img/570145.png");
+  filter: invert(34%) sepia(83%) saturate(2041%) hue-rotate(340deg) brightness(99%) contrast(86%);
+  box-shadow: 1px 1px 12px red;
+  border-radius: 12px;
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  top: 100px;
+  left: 416px;
+  cursor: pointer;
+}
