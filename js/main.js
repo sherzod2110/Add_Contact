@@ -58,14 +58,6 @@ elForm.addEventListener("submit", function(evt) {
 
 })
 
-elList.addEventListener("click", function(evt){
-  if(evt.target != elList){
-    let indexItem = elArray.indexOf(evt.target.textContent.toLowerCase())
-    elArray.splice(indexItem, 1)
-    elList.removeChild(evt.target);
-  }
-})
-
 
 // Push the abeyk from form to array 
 let createContactObject = function(name, surname, relation, phone){
@@ -77,3 +69,13 @@ let createContactObject = function(name, surname, relation, phone){
     phone,
   })
  }
+
+
+// Result splice 
+ elList.addEventListener("click", function(evt){
+  if(evt.target != elList){
+    let indexItem = elArray.indexOf(evt.target.textContent.toLowerCase())
+    elArray.splice(indexItem, 1)
+    elList.removeChild(evt.target);
+  }
+})
