@@ -1,16 +1,18 @@
 .form {
   width: 600px;
-  height: 350px;
+  height: 329px;
   padding: 30px 40px;
   box-shadow: 10px 10px 15px rgb(185, 185, 185);
   border-radius: 5px;
 }
 
 .list {
+  width: 562px;
   padding: 5px;
   border-radius: 5px;
   list-style-type: none;
   margin: 0;
+  position: relative;
 }
 
 
@@ -33,7 +35,7 @@
 }
 
 .text {
-  width: 500px;
+  width: 100%;
   padding: 10px;
   border: 2px solid rgb(69, 217, 58);
   margin-bottom: 10px;
@@ -56,7 +58,7 @@
   background-repeat: no-repeat;
   background-size: 50px 50px;
   top: 100px;
-  left: 416px;
+  left: 81%;
   cursor: pointer;
 }
 
@@ -66,7 +68,7 @@
 }
 
 .box-2 {
-  width: 500px;
+  max-width: 696px;
   padding: 10px;
   border: 2px solid rgb(69, 217, 58);
   margin-bottom: 10px;
@@ -89,6 +91,67 @@
   background-repeat: no-repeat;
   background-size: 50px 50px;
   top: 100px;
-  left: 416px;
+  left: 461px;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1400px) {
+
+  .form {
+    width: 521px;
+  }
+
+}
+
+@media only screen and (max-width: 1207px) {
+  
+  .form {
+    width: 482px;
+    padding: 19px;
+  }
+
+}
+
+@media only screen and (max-width: 1220px) {
+  
+  .form {
+    width: 441px;
+  }
+  .list {
+    width: 432px;
+  }
+  .box-2::after {
+    left: 335px;
+  }
+
+}
+
+@media only screen and (max-width: 994px) {
+  
+  .box_row {
+    flex-direction: column;
+  }
+  .form {
+    width: 100%;
+  }
+  .list {
+    width: 100%;
+  }
+
+  .box-2::after {
+    left: 87%;
+}
+
+}
+
+@media only screen and (max-width: 466px) {
+  
+  .box-2 {
+    padding: 0;
+    padding: 10px;
+  }
+  .box-2::after {
+    left: 80%;
+  }
+
 }
