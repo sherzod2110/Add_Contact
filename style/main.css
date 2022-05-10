@@ -62,6 +62,12 @@
   cursor: pointer;
 }
 
+
+::after:hover {
+  transform: scale(1.1);
+  width: 200px;
+}
+
 .text span {
   font-weight: bold;
   color: rgb(58, 154, 33);

@@ -44,12 +44,18 @@ elForm.addEventListener("submit", function(evt) {
     // New elementlar
     let elNewLi = document.createElement("li");
     elNewLi.classList.add("text")
-    elNewLi.innerHTML = `<p>Name: <span>${elArray[i].name}</span></p> <p>Last name: <span>${elArray[i].surname}</span></p> <p>Relation: <span>${elArray[i].relation}</span></p>
-    <p>Phone number: <span>${elArray[i].phone}</span></p>
+    elNewLi.innerHTML = 
+    `
+    <p>Name: <span>${elArray[i].name}</span></p>
+    <p>Last name: <span>${elArray[i].surname}</span></p>
+    <p>Relation: <span>${elArray[i].relation}</span></p>
+    Phone number: <a href="Tel:${elArray[i].phone}"> ${elArray[i].phone}
     ` 
     elList.append(elNewLi);
 
   }
+
+  
   elInput1.value = null;
   elInput2.value = null;
   elInput3.value = null;
